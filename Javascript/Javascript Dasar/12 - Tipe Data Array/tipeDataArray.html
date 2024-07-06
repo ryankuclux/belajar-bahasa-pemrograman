@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Array</title>
+</head>
+<body>
+    <script>
+        let arrayKosong = [];
+
+        let arrayNama = ["Ryan", "Kuclux", "Febriansyah"];
+        let arrayNumber = [6, 2, 7];
+        let arrayBoolean = [true, false];
+
+        // Menambahkan data ke array kosong
+        const names = [];
+        names.push("Ryan Febriansyah");
+        names.push("Asep Samuel");
+        names.push("Kuclux Alexander");
+        console.table(names);
+
+        // Menampilkan data
+        console.log(names[2]);
+
+        // Mengubah data
+        names[2] = "Ujang Khaneddy";
+        console.table(names);
+
+        // Menghapus data
+        delete names[0];
+        console.table(names);
+
+        // Mengembalikan data dan mengubah data yang sudah di hapus
+        names[0] = "Dikembalikan lagi";
+        console.table(names);
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Matematika</title>
+</head>
+<body>
+    <script>
+        // Augmented Assigment
+        let result = 1 + 1; // 1 + 1 = 2
+        document.writeln("<p> 1 + 1 = " + result + " </p>");
+        let originalResult = result; // 2
+
+        result *= 3; // 6
+        document.writeln("<p>" + originalResult + " * 3 = " + result + "</p>");
+        originalResult = result; // 6
+
+        result -= 3; // 3
+        document.writeln("<p>" + originalResult + " - 3 = " + result + "</p>");
+
+        // Operator unary
+        let resultUnary = +1; // Angka positif
+        document.writeln("<p>" + resultUnary + "</p>");
+
+        resultUnary--; // Menurunkan satu angka
+        document.writeln("<p>" + resultUnary + "</p>");
+
+        resultUnary++; // Menaikkan satu angka
+        document.writeln("<p>" + resultUnary + "</p>");
+
+        resultUnary = -resultUnary; // Mengubah angka menjadi negatif
+        document.writeln("<p>" + resultUnary + "</p>");
+    </script>
+</body>
+</html>

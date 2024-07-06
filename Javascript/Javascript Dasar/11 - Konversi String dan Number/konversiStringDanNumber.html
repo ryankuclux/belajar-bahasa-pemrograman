@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi String dan Number</title>
+</head>
+<body>
+    <script>
+        const value1 = parseInt("1");
+        const value2 = 1;
+        const sum = value1 + value2;
+        document.writeln(`${sum}`);
+
+        document.writeln(`<p>${parseInt("1.9")}</p>`); // Mengkonversi dari string ke number (bilangan bulat)
+        document.writeln(`<p>${parseFloat("1.9")}</p>`); // Mengkonversi dari string ke number (bilangan pecahan)
+        document.writeln(`<p>${Number("1")}</p>`); // Mengkonversi dari string ke number (bilangan bulat atau pecahan)
+
+        const a = 1;
+        const b = 1;
+        const total = a.toString() + b.toString(); //mengkonversi dari number ke string
+        document.writeln(`${total}`);
+
+        // Masih bisa terbaca jika ada number di depan (parseInt dan parseFloat)
+        document.writeln(`<p>${parseInt("1salah")}</p>`);
+        document.writeln(`<p>${parseFloat("1.9eko")}</p>`);
+
+        // Number tidak mentoleransi kesalahan
+        document.writeln(`<p>${Number("1salah")}</p>`); //NaN
+        document.writeln(`<p>${Number("1.1salah")}</p>`); //NaN
+        document.writeln(`<p>${Number("salah")}</p>`); //Nan
+
+        const x = Number("salah"); // NaN
+        const y = x + 10;
+        document.writeln(`${y}`);
+
+        // Mengecek apakah NaN atau bukan
+        document.writeln(`<p>${isNaN(x)}</p>`); // True
+        document.writeln(`<p>${isNaN(100)}</p>`); // False
+    </script>
+</body>
+</html>

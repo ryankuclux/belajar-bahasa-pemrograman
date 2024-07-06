@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe Data Object</title>
+</head>
+<body>
+    <script>
+        const person = {};
+
+        // Menambahkan dan mengubah properties
+        person["Name"] = "Ryan Febriansyah";
+        person["Address"] = "Jl. Golf Cisaranten Wetan";
+        person["Age"] = 17;
+        console.table(person);
+
+        // Menghapus properties
+        delete person["Age"];
+        console.table(person);
+
+        // Membuat object dengan properties
+        const school = {
+            Name: "Ryan Febriansyah",
+            Class: "XII",
+            Major: "Computer Science"
+        };
+        console.log(`Name: ${school.Name}`);
+        console.log(`Class: ${school.Class}`);
+        console.log(`Major: ${school.Major}`);
+    </script>
+</body>
+</html>
